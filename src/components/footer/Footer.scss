@@ -1,0 +1,24 @@
+
+$lightColor: #efefef;
+$darkColor: #0f0f0d;
+$defaultFont: 'Roboto', sans-serif;
+$specialtyFont: 'Roboto Mono', monospace;
+$specialtyFont2: 'Oswald', sans-serif;
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0 0 30px;
+}
+
+.footer__content-left {
+    font-family: $specialtyFont;
+    font-size: 13px;
+}
+.footer__socialmedia {
+    &-item {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}

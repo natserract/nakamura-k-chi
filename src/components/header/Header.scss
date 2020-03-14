@@ -1,0 +1,59 @@
+
+$lightColor: #efefef;
+$darkColor: #0f0f0d;
+$defaultFont: 'Roboto', sans-serif;
+$specialtyFont: 'Roboto Mono', monospace;
+$specialtyFont2: 'Oswald', sans-serif;
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 25px 0;
+    z-index: 1000;
+
+    &__brand {
+        font-family: $defaultFont;
+        font-size: 43px;
+        font-weight: 700;
+    }
+    &__menu {
+        li {
+            display: inline-block; 
+            margin-right: 30px;
+            vertical-align: middle;
+
+            a {
+                font-family: $specialtyFont2;
+                font-size: 15px;
+                text-transform: uppercase;
+                display: block;
+                position: relative;
+
+                &:before{
+                    content: "";
+                    position: absolute;
+                    background: $lightColor;
+                    height: 2px;
+                    width: 0px;
+                    transition: .2s ease-in-out;
+                    right: 0;
+                    left: auto;
+                    bottom: -10px;
+                }
+
+                &:hover:before {
+                    width: 100%;
+                    left: 0;
+                }
+            }
+        }
+
+        &-item {
+            font-family: $defaultFont;
+            font-size: 43px;
+        }
+    }
+}
